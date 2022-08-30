@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
@@ -15,6 +16,34 @@ h1 {
 
 input:focus {
   outline: none;
+}
+
+table {
+  width: 96%;
+  margin: 1.5rem;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #506266;
+  color: white;
+  border-bottom-left-radius: 10px;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+}
+
+td {
+  flex: 9;
+}
+
+tr:hover {
+  background-color: rgba(129, 147, 151, 0.17);
 }
 
 .navbar__container {
@@ -60,7 +89,7 @@ input:focus {
 }
 
 .header__subitem {
-  border: thin solid #819397;
+  border: thin solid rgb(129, 147, 151, 0.2);
   border-radius: 0.5rem;
   margin-right: 1.5rem;
   padding-left: 0.5rem;
@@ -92,4 +121,19 @@ input:focus {
   padding: 0.5rem;
   border: none;
   background-color: transparent;
+}
+
+.table__container {
+  margin: 1.5rem 2rem;
+  border: thin solid rgb(129, 147, 151, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 13px 23px 1px rgba(129, 147, 151, 0.87);
+}
+
+.table__item img {
+  margin-right: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
 }
